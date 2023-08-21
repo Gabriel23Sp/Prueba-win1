@@ -1,0 +1,27 @@
+.button-win{
+    width: auto;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 90 10 / var(--tw-bg-opacity));
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(255 90 10 / var(--tw-border-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(241 245 249 / var(--tw-text-opacity));
+    font-size: 1.25rem/* 20px */;
+    line-height: 1.75rem/* 28px */;
+    font-weight: 600;
+    padding-top: 0.25rem/* 4px */;
+    padding-bottom: 0.25rem/* 4px */;
+    padding-left: 1.5rem/* 24px */;
+    padding-right: 1.5rem/* 24px */;
+    border-radius: 0.75rem/* 12px */;
+    transition: background-color 0.5s ease
+}
+
+.button-win:hover{
+    --tw-text-opacity: 1;
+    color: rgb(255 90 10 / var(--tw-text-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+

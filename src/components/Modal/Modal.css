@@ -1,0 +1,93 @@
+/************* Modal *************/
+.overlay-modal{
+  width: 100vw;
+  height: 100vw;
+  position: fixed;
+  z-index: 200000;
+  top: 0;
+  left: 0;
+  background:  rgba(0,0,0,.5); 
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+  animation: rebote 1s ease-in-out;
+
+}
+.container-modal{
+  width: 900px;
+  min-height: 200px;
+  background: #fff;
+  position: relative;
+  border-radius: 5px;
+  box-shadow:  rgba(100,100,111,0.2)0px 7px 29px 0px;
+  padding: 20px;
+  margin: auto;
+
+}
+
+@keyframes rebote {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+.header-modal{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.header-modal h3{
+  font-weight: 500;
+  font-size: 16px;
+  color: #1766dc;
+}
+
+.button-close button{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: .3s ease all;
+  border-radius: 50px;
+  color: #1766DC;
+}
+
+
+.button-close button:hover{
+  background: #1766DC;
+  color: #E8E8E8;
+}
+
+@media (max-width: 768px) {
+  .overlay-modal{
+    width: 80vw;
+    height: 200vw;
+  }
+  .container-modal{
+  width: 250px;
+  min-height: 10px;
+  border-radius: 15px;
+
+  }
+  .container-modal{
+    height: 500px;
+  margin: 30% auto;
+
+  }
+}
